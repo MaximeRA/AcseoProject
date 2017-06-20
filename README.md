@@ -1,4 +1,6 @@
 AcseoProject
 ============
 
-A Symfony project created on June 15, 2017, 3:28 pm.
+BDD = acseoproject.sql
+
+Pour vous connecter au Panel Admin aller dans l'url /admin et connectez-vous avec avec les identifiants : admin/admin
