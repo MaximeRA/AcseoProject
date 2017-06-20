@@ -1,0 +1,114 @@
+body {
+    font-family: Helvetica;
+    width: 100%;
+    height: auto;
+}
+
+.blur {
+    background: beige url("https://img1.goodfon.ru/original/1920x1200/1/47/noutbuk-rabochee-mesto-zametki.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.underlay{
+    width: 96%;
+    margin: 2%;
+    position: absolute;
+    padding: 2%;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactus {
+    width: 37%;
+    height: 40%;
+    float: left;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+
+.formcontact {
+    width: 60%;
+    float: right;
+}
+
+.formadmin{
+    width: 40%;
+}
+
+
+.tableauadmin{
+    background-color: whitesmoke;
+}
+
+#bg{
+    background: green;
+}
+
+.recap {
+    width: 70%;
+    height: 70%;
+    background-color: #EEEEEE;
+    padding: 15px 15px 15px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    border-radius: 5px;
+}
+
+.overlay{
+    width: 96%;
+    margin: 0 0 0 2%;
+    padding: 2% 0 2% 2%;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    margin: 0;
+    color: whitesmoke;
+    font-size: 50px;
+    letter-spacing: -1px;
+    font-weight: lighter;
+}
+
+h4 {
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-weight: lighter;
+}
+
+
+.footer {
+    text-align: end;
+}
+
+
+
+table {
+    border: solid #666 1px;
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    border: solid #666 1px;
+    padding: 1em;
+    text-align: left;
+}

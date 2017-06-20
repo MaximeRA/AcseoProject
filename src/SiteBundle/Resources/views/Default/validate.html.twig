@@ -1,0 +1,20 @@
+
+{% extends  'base.html.twig '%}
+
+{% block titrepage %}
+
+    <div class="overlay"> <h1> Récapitulatif</h1></div>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="recap"> <h4> Nous avons bien reçu votre demande.</h4>
+        <p>Merci de votre confiance, {{ contact.nom }}. </br>
+        Nous vous contacterons au plus vite sur votre email : {{ contact.email }}.</br>
+        Votre question est : "{{ contact.question }}".</br></br>
+        A bientôt !</p>
+        <a href="{{ path('site_back_homepage') }}"> Retour </a></div>
+
+
+{% endblock %}

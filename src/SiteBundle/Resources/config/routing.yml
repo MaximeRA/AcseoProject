@@ -1,0 +1,31 @@
+site_homepage:
+    path:     /
+    defaults: { _controller: SiteBundle:Default:add }
+
+site_back_homepage:
+    path: /
+    defaults: { _controller: SiteBundle:Default:add }
+    methods: [GET]
+
+
+site_success:
+    path:  /success
+    defaults: { _controller: SiteBundle:Default:success }
+
+
+admin_form:
+    path:     /admin
+    defaults: { _controller: SiteBundle:Admin:connectAdmin }
+
+admin_ticket:
+    path:     /adminpanel
+    defaults: { _controller: SiteBundle:Admin:show }
+
+
+admin_modif:
+    path: /update/{contactId}/{status}
+    defaults: { _controller: SiteBundle:Admin:update}
+    methods: [GET]
+
+
+

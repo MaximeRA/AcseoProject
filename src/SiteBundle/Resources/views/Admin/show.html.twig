@@ -1,0 +1,37 @@
+
+
+{% extends  '::base.html.twig'%}
+
+{% block titrepage %}
+
+    <div class="overlay"> <h1> Liste des tickets</h1></div>
+
+{% endblock %}
+
+{% block body %}
+    <div class="tableauadmin">
+
+    <table width="100%">
+    <tr>
+        <th width="20%"> Nom </th>
+        <th width="20%"> Email </th>
+        <th width="50%"> Question </th>
+        <th width="10%"> A été traité </th>
+    </tr>
+        {% for contact in contacts %}
+            <tr>
+                   <td> {{ contact.nom }} </td>
+                    <td> {{ contact.email }} </td>
+                    <td> {{ contact.question }} </td>
+                <td>
+                {% if contact.isAnswered == true %}
+                     <a href="update/{{contact.id}}/{{ contact.isAnswered }}"> Oui </a>
+                {% else %}
+                     <a href="update/{{contact.id}}/false"> Non </a>
+                {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <div id="bg"></div>
+{% endblock %}

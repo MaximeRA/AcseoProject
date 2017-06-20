@@ -1,0 +1,40 @@
+
+{# Site/Resources/views/default/add.html.twig #}
+
+{% extends  '::base.html.twig'%}
+
+{% block titrepage %}
+
+<div class="overlay"> <h1> Formulaire de contact</h1></div>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="contactus"><h4>Contactez-nous ! </h4>
+Notre entreprise </br>
+24 avenue Saint-Jérôme</br>
+13100 Aix-en-Provence</br>
+Tél : 06 26 20 12 27</br></br>
+
+Posez vos questions, nous y répondrons dans les plus bref délais.
+    </div>
+
+    <div class="well formcontact">
+        {{ form(form) }}
+    </div>
+
+    <div>
+
+
+    </div>
+
+{% endblock %}
+{% block foot %}
+
+    <div id="bg"></div>
+
+
+
+{% endblock %}
+
